@@ -65,7 +65,7 @@ with tf.Session() as sess:
     print('Training Time (Seconds) :', t2-t1)
     #print('Accuracy :', sess.run(accuracy, feed_dict={X: mnist.test.images, Y: mnist.test.labels}))
 
-    model_path = "/deep_tmp/model.saved"  # 모델을 저장할 경로와 파일 이름
+    model_path = "deep_tmp/model.saved"  # 모델을 저장할 경로와 파일 이름
     saver = tf.train.Saver()
     save_path = saver.save(sess, model_path)
     print("Model saved in file: %s" % save_path)
