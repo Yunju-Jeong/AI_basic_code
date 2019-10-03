@@ -53,7 +53,7 @@ with tf.Session() as sess:
     sess.run(tf.global_variables_initializer())
 
     # 저장된 모델 파라미터를 가져옵니다.
-    model_path = "/deep_tmp/model.saved"
+    model_path = "deep_tmp/model.saved"
     saver = tf.train.Saver()
 
     saver.restore(sess, model_path)
